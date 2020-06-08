@@ -1,0 +1,16 @@
+.list {
+  list-style: none;
+  overflow: hidden;
+  width: 320px;
+  margin: 0 auto;
+  border-radius: 3px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  box-shadow: 7px 4px 5px 0px rgba(0, 0, 0, 0.36);
+  border-radius: 3px;
+}
