@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import FormFormik from "../Form/FormFormik";
-
 import ContactsList from "../ContactsList/ContactsList";
 import ContactsFilterForm from "../ContactsFilter/ContactsFilterForm";
 import "react-toastify/dist/ReactToastify.css";

@@ -42,3 +42,6 @@
   text-align: left;
   margin-left: 20px;
 }
+* {
+  transition: all linear 300ms;
+}

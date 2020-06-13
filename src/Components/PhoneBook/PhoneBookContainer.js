@@ -5,10 +5,18 @@ import {
   asyncDeleteItem,
   filterContacts,
 } from "../../redux/Actions/PhoneBookActions";
+import {
+  contactsSelector,
+  filterSelector,
+  errorSelector,
+  loaderSelector,
+} from "../../redux/Selectors/contactsSelectors.js";
 
-const mapStateToProps = (state, props) => ({
-  contacts: state.contacts,
-  filter: state.filter,
+const mapStateToProps = (state) => ({
+  contacts: contactsSelector(state),
+  filter: filterSelector(state),
+  error: errorSelector(state),
+  loader: loaderSelector(state),
 });
 
 const mapDispatchToProps = {
