@@ -10,6 +10,7 @@ import {
   filterSelector,
   errorSelector,
   loaderSelector,
+  filteredContacts,
 } from "../../redux/Selectors/contactsSelectors.js";
 
 const mapStateToProps = (state) => ({
@@ -17,6 +18,7 @@ const mapStateToProps = (state) => ({
   filter: filterSelector(state),
   error: errorSelector(state),
   loader: loaderSelector(state),
+  filteredContacts: filteredContacts(state),
 });
 
 const mapDispatchToProps = {

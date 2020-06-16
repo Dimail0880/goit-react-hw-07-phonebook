@@ -15,10 +15,7 @@ class PhoneBook extends Component {
 
   render() {
     const { didMount } = this.state;
-    const { contacts, filter } = this.props;
-    const filteredContacts = contacts.filter((el) =>
-      el.name.toLowerCase().includes(filter.toLowerCase())
-    );
+    const { contacts, filteredContacts } = this.props;
     return (
       <>
         <CSSTransition
